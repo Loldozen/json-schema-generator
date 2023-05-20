@@ -87,10 +87,13 @@ class JsonSchemaGenerator:
         with open(output_file, "w") as file:
             json.dump(self.schema, file, indent=2)
 
-# Usage example
-file_path = "./data/data_2.json"  # Replace with the actual file path
 
-sniffer = JsonSchemaGenerator(file_path)
-sniffer.read_json_file()
-sniffer.generate_json_schema()
-sniffer.dump_schema("./schema/schema_2.json")
+file_path = "./data/data_2.json"  # Replace with the actual file path
+# file_path = "./data/data_1.json"
+
+generator = JsonSchemaGenerator(file_path)
+generator.read_json_file()
+generator.generate_json_schema()
+generator.dump_schema("./schema/schema_2.json") # Replace with the actual file path
+# generator.dump_schema("./schema/schema_2.json")
+
