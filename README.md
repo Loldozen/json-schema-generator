@@ -14,7 +14,7 @@ This repository houses the code for the json schema generator.
 
 **Note:** A virtual environment is not necessary as only builtin python 3.10.6 packages were used
 
-### Testing & Static analysis
+### Testing
 
 -   `$ python3 test.py`
 -   Alternative command `$ python test.py`
